@@ -1,18 +1,17 @@
 import { AnimatedStatistics } from "@/components/animate-statistics";
+import { AppDesign } from "@/components/app-design";
 import { AppIntroduce } from "@/components/app-introduce";
 import { AppOverview } from "@/components/app-overview";
 import { Navigation } from "@/components/navigation";
 
 export default function Home() {
   return (
-    <div className="w-full relative flex flex-col items-center justify-items-center border-2 border-yellow-400 py-7 font-[family-name:var(--font-geist-sans)]">
+    <div className="w-full relative flex flex-col items-center justify-items-center py-5 font-[family-name:var(--font-geist-sans)]">
       <Navigation/>
       <AppIntroduce />
       <AppOverview />
       <AnimatedStatistics />
-      <div className="h-[1100px] w-[530px] relative border-2 border-green-500"></div>
-      <AppIntroduce />
-      <AppIntroduce />
+      <AppDesign />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"></main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </div>
