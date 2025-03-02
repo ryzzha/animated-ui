@@ -24,8 +24,8 @@ export const Navigation = () => {
     }, []);
 
     return (
-        <nav className="sticky top-7 left-0 right-0 inset-x-0 bg-gray-300 bg-opacity-35 w-1/3 flex justify-between items-center px-5 p-3 max-w-5xl mx-auto rounded-full transition-all duration-500">
-        <div className="flex items-center gap-1 py-2">
+        <nav className="sticky z-50 top-7 left-0 right-0 inset-x-0 bg-gray-300 bg-opacity-35 w-1/3 flex justify-between items-center px-5 p-3 max-w-5xl mx-auto rounded-full transition-all duration-500">
+        <div className="flex items-center gap-1">
             <Logo /> 
             <span className="font-bold text-xl">Mobbin</span>
         </div>
@@ -38,8 +38,8 @@ export const Navigation = () => {
                 transition={{ duration: 0.1 }}
                 className="flex gap-5 items-center"
             >
-                <a href="#" className="">Pricing</a>
-                <a href="#" className="">Log in</a>
+                <a href="#" className="hover:opacity-85">Pricing</a>
+                <a href="#" className="hover:opacity-85">Log in</a>
             </motion.div>
           </AnimatePresence>
           <AnimatePresence>
@@ -50,7 +50,7 @@ export const Navigation = () => {
                 animate={{ opacity: 1, y: 0 }} 
                 exit={{ opacity: 0, y: 10 }} 
                 transition={{ duration: 0.5 }}
-                className="bg-black text-white rounded-full px-3 py-2"
+                className="bg-black hover:bg-black/85 text-white rounded-full px-3 py-2"
               >
                 Join for free
               </motion.a>

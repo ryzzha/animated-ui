@@ -10,6 +10,7 @@ export default function Home() {
       <AppIntroduce />
       <AppOverview />
       <AnimatedStatistics />
+      <div className="h-[1100px] w-[530px] relative border-2 border-green-500"></div>
       <AppIntroduce />
       <AppIntroduce />
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start"></main>
